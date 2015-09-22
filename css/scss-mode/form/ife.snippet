@@ -1,6 +1,10 @@
 # -*- mode: snippet -*-
-# name: bgcs
-# key: bgcs
+# name: ife
+# key: ife
 # contributor: yufi<yfhj1990@hotmail.com>
 # --
-background-color: ${1:$secondary-color};$0
+@if ${1:cond} {
+      $2
+} @else {
+  $0
+}
